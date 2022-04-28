@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+}
+.card{
+    width: 60%;
+    height: auto;
+    background-color:rgb(37, 35, 35) ;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    border-radius: 5px;
+    
+
+}
+.cardpart1{
+    padding: 4rem;
+}
+.cardpart1 h1{
+    color: white;
+    font-size: 32px;
+
+}
+.cardpart1 span{
+    color: blueviolet;
+    font-size: 32px;
+}
+.cardpart1 h2{
+    font-size: 32px;
+    padding-top: 10px;
+}
+.cardpart1 br{
+    padding-top: 10px;
+}
+.cardpart1 p{
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 10px;
+}
+.list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+
+}
+.mabile{
+    display: none;
+}
+.list span{
+    color: whitesmoke;
+    font-size: 24px;
+}
+.card-image {
+    width: 400px;
+    height: 400px;
+    background-image:linear-gradient(rgba(165, 42, 222, 0.9),rgba(232, 67, 226, 0.8)), url('images/image-header-desktop.jpg');
+
+   
+    overflow: hidden;
+    background-size: cover;
+
+}
+@media screen and (max-width: 600px) {
+    body{
+        margin-top: 10%;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: auto;
+        width: 60%;
+        height: auto;
+        background-color: rgb(37, 35, 35);
+
+    }
+    .mabile{
+        display: block;
+        width: 290px;
+        height: 250px;
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%,-50%);
+        
+
+    
+        background-image: linear-gradient(rgba(165, 42, 222, 0.9),rgba(232, 67, 226, 0.8)),url('images/image-header-mobile.jpg');
+        background-size: cover;
+    }
+    .card-image {
+        display: none;
+    }
+    .cardpart1{
+        margin-top: 25%;
+    }
+    
+    .list ul li{
+        display: block;
+    }
+    
+}
